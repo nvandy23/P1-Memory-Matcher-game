@@ -1,0 +1,27 @@
+*{
+  background-color: orange;
+}
+
+.game--board--container {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 130px 130px 130px 130px; 
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-items:center;
+  align-items: center;
+  margin-left: 230px;
+  margin-top: 50px;
+}
+
+
+#cell {
+height:100px;
+width:200px;
+background:#111111;
+border: 5px solid #d15a0a;
+cursor:pointer;
+}
+#cell:hover{
+  background: orange;
+}

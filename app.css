@@ -1,0 +1,50 @@
+*{
+  background-color: orange;
+}
+
+.game--board--container {
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: 130px 130px 130px 130px; 
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-items:center;
+  align-items: center;
+  margin: 50px 200px 50px 200px;
+  border: 5px solid blue;
+}
+
+
+#cell {
+height:100px;
+width:200px;
+background:#111111;
+border: 5px solid white;
+cursor:pointer;
+}
+#cell:hover{
+  background: white;
+  border: 5px solid white;
+}
+.start--screen--container {
+  visibility: visible;
+}
+.score--container {
+  visibility: hidden;
+}
+.p_score,.total_matches{
+  display:flex;
+  align-items: center;
+  border: 5px solid red;
+}
+
+.m_attempts,.time{
+  display: flex;
+  align-items:center;
+  border: 5px solid blue;
+}
+
+.endGame_screen{
+  display:none
+}
