@@ -15,7 +15,7 @@ let choices_won =[]
 let score =0
 let matches = 0
 let match_attempt =0 
-let countDown =100
+let countDown =90
 let times
 
 start_button.addEventListener('click',()=>{
@@ -33,8 +33,8 @@ function count(){
   countDown --;
   if(countDown<0) {
     clearInterval(times)
+    gameOver()
   }
- 
    }, 1000)
 
 }
@@ -151,10 +151,10 @@ else {
     game_board.style.display ='none'
     score_container.style.display ='none'
     endGame_screen.style.display ='block'
-    if(timer.textContent <= '97'){
+    if(timer.textContent <= '0'){
       end_game_text.textContent = `Ahhh! Game over! You ran out of time!  Would you like to try again?`
     }
-    else if(match_attempt.textContent === '25'){
+    else if(match_attempts.textContent === '25'){
       end_game_text.textContent = `You ran out of match attempts! Would you like to try again?`
     }
   }
