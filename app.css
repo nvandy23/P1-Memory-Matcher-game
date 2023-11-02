@@ -8,7 +8,7 @@ body {
 
 .start--screen--container
 {
-  background-image: url('halloween-image.jpg');
+  background-image: url('./images/halloween-image.jpg');
   /* source: https://pixabay.com/illustrations/halloween-background-wallpaper-bats-7494260/*/
   background-repeat: no-repeat;
   height: 3000px;
@@ -22,7 +22,7 @@ body {
 }
 
 .game--board--container {
-  background-image: url('halloween-2.jpg');
+  background-image: url('./images/halloween-2.jpg');
   /* source: https://pixabay.com/illustrations/halloween-pumpkin-jack-o-lantern-2837936/ */
   display: grid;
   visibility: hidden;
