@@ -2,6 +2,7 @@ const start_screen =document.querySelector('.start--screen--container')
 const start_button =document.querySelector('.start_button')
 const cells = document.querySelectorAll('#cell')
 const game_board = document.querySelector('.game--board--container')
+const game_board1 =document.querySelector('.game--board--container_1')
 const player_score =document.querySelector('.player--score') 
 const total_matches =document.querySelector('.total--matches')
 let timer =document.querySelector('.timer')
@@ -15,14 +16,14 @@ let choices_won =[]
 let score =0
 let matches = 0
 let match_attempt =0 
-let countDown =90
+let countDown =100
 let times
 
 start_button.addEventListener('click',()=>{
 start_screen.style.visibility ='none'
 game_board.style.visibility = 'visible'
-score_container.style.visibility ='visible'
 start_screen.style.display ='none'
+score_container.style.visibility ='visible'
 count()
 })
 
@@ -127,7 +128,7 @@ shuffleSelections(cells)
 
 function checkWinConditions() {
   if(choices_won.length ===8) {
-   game_board.style.display ='none'
+   game_board1.style.display ='none'
    score_container.style.display ='none'
    endGame_screen.style.display ='block'
    if(`${score}` >1000)
@@ -141,6 +142,7 @@ function checkWinConditions() {
 else {
   end_game_text.textContent =`ehhh`
 }
+clearInterval(times)
    }
    }
 
@@ -148,7 +150,7 @@ else {
   console.log(timer.textContent)
   console.log(match_attempts.textContent)
   if( timer.textContent <= '0' || (match_attempts.textContent === '25')) {
-    game_board.style.display ='none'
+    game_board1.style.display ='none'
     score_container.style.display ='none'
     endGame_screen.style.display ='block'
     if(timer.textContent <= '0'){
@@ -156,6 +158,7 @@ else {
     }
     else if(match_attempts.textContent === '25'){
       end_game_text.textContent = `You ran out of match attempts! Would you like to try again?`
+      clearInterval(times)
     }
   }
 
@@ -164,7 +167,7 @@ else {
 
 function hitReset(){
   reset_button.addEventListener('click',()=>{
-    game_board.style.display = 'grid'
+    game_board1.style.display = 'grid'
     score_container.style.display = 'flex'
    //endGame_screen.style.display ='none'
    endGame_screen.style.display ='none'

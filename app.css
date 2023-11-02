@@ -1,29 +1,36 @@
-
+html{
+  height: 100%
+}
 
 body {
   margin: 0;
   overflow: hidden;
+  height:100%
 
 }
 
+.begin .start_button {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+}
 .start--screen--container
 {
   background-image: url('./images/halloween-image.jpg');
   /* source: https://pixabay.com/illustrations/halloween-background-wallpaper-bats-7494260/*/
-  background-repeat: no-repeat;
-  height: 3000px;
-  width:3000px;
-  max-width: 3000px;
-  max-height: 3000px;
-  object-fit:cover;
+  margin-top:0;
+  padding:0;
   position: absolute;
-  top: 0;
-  left:0;
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size:cover;
+  color:white;
 }
 
+
 .game--board--container {
-  background-image: url('./images/halloween-2.jpg');
-  /* source: https://pixabay.com/illustrations/halloween-pumpkin-jack-o-lantern-2837936/ */
   display: grid;
   visibility: hidden;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,10 +40,14 @@ body {
   justify-items:center;
   align-items: center;
   border: 5px solid blue;
-  max-height:3000px;
-  max-width:3000px;
 }
-
+.game--board--container_1{
+  background-image: url('./images/halloween-2.jpg');
+  /* source: https://pixabay.com/illustrations/halloween-pumpkin-jack-o-lantern-2837936/ */
+  background-size:cover;
+  width:100%;
+  height:100%;
+}
 
 #cell {
 height:100px;
@@ -52,22 +63,24 @@ cursor:pointer;
 .start--screen--container {
   visibility: visible;
 }
-.score--container {
-  visibility: hidden;
-}
-.p_score,.total_matches{
-  display:flex;
-  align-items: center;
-  border: 5px solid red;
+.title--container {
+color:white;
 }
 
-.m_attempts,.time{
-  display: flex;
-  align-items:center;
-  border: 5px solid blue;
+
+
+
+.score--container {
+  visibility: hidden;
+  display:flex;
+  color:white;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
 }
+
 
 .endGame_screen{
   display:none
 }
-
