@@ -70,14 +70,14 @@ function checkforMatches() {
 else if(choices_selected.length ===2 && choices_selected[0].innerText === choices_selected[1].innerText && choices_selected[0].classList.value !== choices_selected[1].classList.value){
     choices_won.push(choices_selected)
     choices_selected =[]
-     player_score.textContent = ` ${score+=50}`
+     player_score.textContent = ` ${score+=200}`
      total_matches.textContent = ` ${matches+=1}`
 }
 
 
 else if (choices_selected.length ===2 && choices_selected[0].innerText !== choices_selected[1].innerText){
   if(`${score}` >0) {
-    player_score.textContent = ` ${score-=10}`
+    player_score.textContent = ` ${score-=40}`
   }
   
   match_attempts.textContent =`${match_attempt+=1}`
@@ -132,7 +132,7 @@ function checkWinConditions() {
    reset_button.style.display ='flex'
    if(`${score}` >1000)
    end_game_text.textContent = `Wow! Amazing job! Your score was ${score}! Want to try again and try to top it?`
-   else if(`${score}`<1000 && `${score}`>=700){
+   else if(`${score}`<=1000 && `${score}`>=700){
     end_game_text.textContent =`Very nice! Your score was ${score}. Want to try again?`
    }
    else if (`${score}`> 700 && `${score}`<=400){
@@ -168,16 +168,11 @@ clearInterval(times)
 
 function hitReset(){
   reset_button.addEventListener('click',()=>{
-    game_board1.style.display = 'grid'
-    score_container.style.display = 'flex'
-   endGame_screen.style.display ='none'
    location.reload()
    clearInterval(times)
-  console.log(choices_won)
   
   })
 }
 
 
 hitReset()
-

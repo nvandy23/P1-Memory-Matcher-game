@@ -9,15 +9,12 @@ body {
 
 }
 
-.begin, .start_button {
+.begin--text, .start_button {
   display:flex;
   justify-content:center;
   align-items: center;
   font-family: 'creepster';
-  font-size:40px;
-
- 
-
+  font-size:30px;
 }
 .start--screen--container
 {
@@ -71,10 +68,10 @@ cursor:pointer;
   visibility: visible;
 }
 .title--container {
-color:white;
+color:orange;
 font-family:'creepster';
 text-align: center;
-font-size:60px;
+font-size:50px;
 }
 
 
@@ -89,7 +86,8 @@ font-size:60px;
   align-items: center;
   justify-content: space-around;
   font-family:'creepster';
-  font:40px;
+  font-size: 25px;
+ 
 }
 
 
