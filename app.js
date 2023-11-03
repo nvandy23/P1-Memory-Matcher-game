@@ -57,7 +57,7 @@ player_score.textContent = `${score}`
 })
 }
 
-//async 
+
 function checkforMatches() {
   if(choices_selected.length ===2 && choices_selected[0].classList.value === choices_selected[1].classList.value){
     for(let match of choices_selected){
@@ -79,9 +79,8 @@ else if (choices_selected.length ===2 && choices_selected[0].innerText !== choic
   if(`${score}` >0) {
     player_score.textContent = ` ${score-=10}`
   }
-  //player_score.textContent = ` ${score-=10}`
+  
   match_attempts.textContent =`${match_attempt+=1}`
-  //await 
   removeClicks()
   for(let match of choices_selected){
     setTimeout(()=> {
@@ -93,7 +92,6 @@ else if (choices_selected.length ===2 && choices_selected[0].innerText !== choic
   
      }  
     choices_selected=[]
-   // addClicks()
   
 }
 gameOver()
@@ -114,7 +112,6 @@ function addClicks() {
   cell.addEventListener('click',listener)
   })}
 
- //async 
  function removeClicks(){
   console.log('removeClicks')
   cells.forEach((cell)=>{
@@ -173,11 +170,9 @@ function hitReset(){
   reset_button.addEventListener('click',()=>{
     game_board1.style.display = 'grid'
     score_container.style.display = 'flex'
-   //endGame_screen.style.display ='none'
    endGame_screen.style.display ='none'
    location.reload()
    clearInterval(times)
-   //shuffleSelections(cells)
   console.log(choices_won)
   
   })
