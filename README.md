@@ -1,21 +1,55 @@
 # P1-Memory-Matcher-game
 
+
+# Link to my game:
+https://nvandy23.github.io/P1-Memory-Matcher-game/
+
+
 # Rules of the game 
 
-- Note: Memory Matcher will have a Halloween theme. Additional features that will be added with time permitting will be labeled (TP). Different colored cells will be initial proposed feature.
+Spooky Memory Match consists of 16 cards arranged in a 4x4 grid, each displaying the same Halloween-themed emoji. When the player clicks on a card, it will reveal a different Halloween-themed emoji. There are a total of 8 pairs of matching emojis, and the player's goal is to find all the matches to win.
 
-1. Memory Matcher will consists of 16, 4x4 cells each showing the same initial color or same initial picture (TP). When the player clicks, the clicked cell will reveal a different color or picture(TP). There will be 8 matches in total, when and if the player selects all the matches, the player wins.
+The player will lose and trigger a game over if:
 
-2. The player will lose and trigger a game over if:
-• The player exceeds over 25 attempts to get all the matches
-• The minute and a half timer runs out before the player completes all the matches.
+The player exceeds 25 attempts to find all the matches.
+The 100-second timer runs out before the player completes all the matches.
 
-4. The player will win if they can complete the tasks within those variables. Because of all these variables, it is expected that this game will be somewhat challenging and keep the player engaged in a fast-paced, short, and fun experience.
 
-5. Cells/cards will be shuffled with each reset so the game will be replayable.
- 
-6. A player score will also be displayed during this game. the player will be rewarded 100 points for a correct match and 10 points will be deducted per incorrect match. If the player is able to complete all the matches in under 20 attempts, the player will receive a 200 point match completion bonus. If the player is able to complete the game in under 1 minute and 15 seconds, a time bonus of 250 points will be added to the total as well. 
+The player will win if they can complete the tasks within these variables. Due to these challenges, the game is designed to provide a fast-paced, short, and engaging experience.
 
-7. If the player completes 4 total matches in under 45 seconds, a fast match bonus of 150 points will be rewarded(TP)
+The cards will be shuffled with each reset, making the game replayable.
 
-8. If the player runs out of match attempts or if the timer runs out and the player has more than 200 points at the time of the occurence, the player will get a second chance bonus of 3 extra match attempts(TP)
+A player's score will also be displayed during the game. The player will earn 200 points for a correct match and will have 40 points deducted for each incorrect match. The results will be rendered based on the player's score, indicating how well they performed.
+
+
+Here are some screenshots of the game in different states:
+
+Start screen:
+images/Start_screen.png
+
+Incorrect match:
+images/Incorrect_match.jpg
+
+Correct match:
+images/Match_screen.jpg
+
+Game over:
+images/game_over.jpg
+
+Game won:
+images/game_won_screen.png
+
+
+Please click the link above to play!
+
+
+
+Technologies used: HTML5,CSS, and Javascript.
+Game creator: Richard "Nick" Vanderipe.
+Acknowledgements: Thanks to pixabay.com (credited in app.css) for allowing me to use high resolution backgrounds. This played a huge part in the styling of this game.
+Future features: Streak bonuses, Time completion bonus, and accurate mobile app rendering.
+
+
+
+
+

@@ -8,7 +8,7 @@ As a player, I would like the game to have several variables to keep the game in
 As a player, if I win or lose, I would like to see the display of my results and a screen showing me the option to reset and play again.
 
 ## A wireframe of your "main" game screen
-Please see my png attached in this repository. (Note: This is a preliminary game screen.)
+images/game_screen.png
 
 ## Psuedocode for the overall game play.
 
