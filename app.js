@@ -130,17 +130,19 @@ function checkWinConditions() {
   if(choices_won.length ===8) {
    game_board1.style.display ='none'
    score_container.style.display ='none'
-   endGame_screen.style.display ='block'
+   endGame_screen.style.display ='flex'
+   end_game_text.style.display = 'flex'
+   reset_button.style.display ='flex'
    if(`${score}` >1000)
    end_game_text.textContent = `Wow! Amazing job! Your score was ${score}! Want to try again and try to top it?`
    else if(`${score}`<1000 && `${score}`>=700){
-    end_game_text.textContent =`Very nice! Your score was ${score} want to try again?`
+    end_game_text.textContent =`Very nice! Your score was ${score}. Want to try again?`
    }
    else if (`${score}`> 700 && `${score}`<=400){
-    end_game_text.textContent =`Not bad! Your score was ${score} want to try again?`
+    end_game_text.textContent =`Hey not bad! Your score was ${score}. Want to try again?`
    }
 else {
-  end_game_text.textContent =`ehhh`
+  end_game_text.textContent =`Ehh not bad, Your score was ${score}. Want to try again?`
 }
 clearInterval(times)
    }
@@ -152,7 +154,9 @@ clearInterval(times)
   if( timer.textContent <= '0' || (match_attempts.textContent === '25')) {
     game_board1.style.display ='none'
     score_container.style.display ='none'
-    endGame_screen.style.display ='block'
+    endGame_screen.style.display ='flex'
+    end_game_text.style.display = 'flex'
+    reset_button.style.display ='flex'
     if(timer.textContent <= '0'){
       end_game_text.textContent = `Ahhh! Game over! You ran out of time!  Would you like to try again?`
     }
