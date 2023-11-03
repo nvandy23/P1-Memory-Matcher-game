@@ -24,15 +24,23 @@ A player's score will also be displayed during the game. The player will earn 20
 
 Here are some screenshots of the game in different states:
 
+Start screen:
+![Start Screen:](images/Start_screen.png)
 
-![Start Scrren:](images/Start_screen.png)
 
+Incorrect screen:
 ![Incorrect match:](images/Incorrect_match.jpg)
 
+
+Correct screen:
 ![Correct match:](images/Match_screen.jpg)
 
+
+Game over:
 ![Game over:](images/game_over.jpg)
 
+
+Game won:
 ![Game won:](images/game_won_screen.png)
 
 
